@@ -9,6 +9,7 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.app.mbti.ui.theme.MbtiTheme
 
@@ -18,15 +19,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             MbtiTheme {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = Color.White,
+                    modifier = Modifier.fillMaxSize()
                 ) {
+                    com.app.mbti.Navigation()
                 }
             }
         }
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
